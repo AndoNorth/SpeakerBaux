@@ -1,3 +1,9 @@
+/*
+npm install discord.js
+npm install @discordjs/voice libsodium-wrappers
+npm install @discordjs/opus
+npm install ffmpeg-static
+*/
 // setup .env
 require('dotenv').config()
 
@@ -9,6 +15,7 @@ const client = new Client({
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildVoiceStates,
     ],
     
 })
