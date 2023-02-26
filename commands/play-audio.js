@@ -10,7 +10,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName('play-audio')
     .setDescription('plays template audio'),
-    async execute(interaction) {
+    async execute(client, interaction) {
         if(!interaction.member.voice.channel){
             interaction.reply('you must be in a voice channel');
             return;
