@@ -12,8 +12,8 @@ module.exports = {
             .setName("song")
             .setDescription("load a song from url")
             .addStringOption((option) =>
-                option.setName("url").setDescription("the song's url").setRequired(true))
-    ),
+                option.setName("url").setDescription("the song's url").setRequired(true)))
+    ,
     async execute(client, interaction) {
         if(!interaction.member.voice.channel) return interaction.editReply('you must be in a voice channel');
 
